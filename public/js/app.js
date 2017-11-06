@@ -990,12 +990,12 @@ window.Vue = __webpack_require__(34);
 
 Vue.component('example-component', __webpack_require__(37));
 
-var app = new Vue({
+/*var app = new Vue({
   el: '#application',
   data: {
     message: 'Hello Vue!'
-  }
-});
+}
+});*/
 
 /***/ }),
 /* 11 */
@@ -1009,10 +1009,7 @@ window._ = __webpack_require__(12);
  * code may be modified to fit the specific needs of your application.
  */
 
-try {
-  window.$ = window.jQuery = __webpack_require__(14);
-} catch (e) {}
-
+window.$ = window.jQuery = __webpack_require__(14);
 /**
  * We'll load the axios HTTP library which allows us to easily issue requests
  * to our Laravel back-end. This library automatically handles sending the

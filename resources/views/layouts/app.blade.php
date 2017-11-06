@@ -17,7 +17,9 @@
 
         <!--  CSS for Demo Purpose, don't include it in your project     -->
             <link href="{{ asset('css/demo.css') }}" rel="stylesheet" />
+            <link href="{{ asset('css/example.css') }}" rel="stylesheet" />
         <!--  Fonts and icons     -->
+            <link href="{{ asset('css/datatable.min.css') }}" rel="stylesheet"/>
             <link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
             <link href='https://fonts.googleapis.com/css?family=Muli:400,300' rel='stylesheet' type='text/css'>
             <link href="{{ asset('css/themify-icons.css') }}" rel="stylesheet">
@@ -28,18 +30,21 @@
                 @if (Auth::guest())
                     @yield('content')
                 @else
-                    @include('navigation')
-                    <div id="appa" class="main-panel">
+                    @include('layouts.navigation')
+                    <div class="main-panel">
+                        @include('layouts.head')
                         @yield('content')
                     </div>
                 @endif
             </div>
             <script src="{{ asset('js/app.js') }}"></script>
-            <script src="{{ asset('js/jquery.js') }}"></script>
+
     	    <script src="{{ asset('js/bootstrap.min.js') }}"></script>
-    	<!--  Checkbox, Radio & Switch Plugins -->
+            <script src="{{ asset('js/datatable.min.js') }}"></script>
+                	<!--  Checkbox, Radio & Switch Plugins -->
     	    <script src="{{ asset('js/bootstrap-checkbox-radio.js') }}"></script>
     	<!--  Charts Plugin -->
+            <script src="{{ asset('js/example.js') }}"></script>
     	    <script src="{{ asset('js/chartist.min.js') }}"></script>
         <!--  Notifications Plugin    -->
             <script src="{{ asset('js/bootstrap-notify.js') }}"></script>
