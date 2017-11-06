@@ -207,7 +207,8 @@ hr {
 .wrapper {
   position: relative;
   top: 0;
-  height: 100vh; }
+  height: 100vh;
+  zoom:85%;}
 
 .sidebar {
   position: absolute;

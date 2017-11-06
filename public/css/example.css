@@ -1,0 +1,32 @@
+.panel-content {
+    margin: 0 auto;
+    background: #efefef;
+    margin: 3%;
+    text-align: left;
+}
+
+.content-global {
+    padding: 20px;
+    background: white;
+}
+
+.position-button {
+    margin-top: 3%;
+    width: 20%;
+}
+
+.panel-head {
+    border-top: 5px;
+    background: #d4d4d4;
+    width: 100%;
+    text-align: center;
+    height: 30px;
+    border-radius: 5px;
+    color: unset;
+    padding: 5px;
+}
+
+.form-content {
+    padding-left: 5%;
+    padding-right: 5%;
+}
