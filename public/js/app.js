@@ -964,7 +964,7 @@ module.exports = Cancel;
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(10);
-module.exports = __webpack_require__(41);
+module.exports = __webpack_require__(42);
 
 
 /***/ }),
@@ -989,7 +989,7 @@ window.Vue = __webpack_require__(34);
  */
 
 Vue.component('example-component', __webpack_require__(37));
-
+__webpack_require__(41);
 /*var app = new Vue({
   el: '#application',
   data: {
@@ -40423,6 +40423,17 @@ if (false) {
 
 /***/ }),
 /* 41 */
+/***/ (function(module, exports) {
+
+var app = new Vue({
+  el: '#application',
+  data: {
+    message: 'Hello Vue!'
+  }
+});
+
+/***/ }),
+/* 42 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
