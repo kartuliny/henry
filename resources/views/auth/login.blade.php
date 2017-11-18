@@ -23,7 +23,7 @@
                         <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
                             <label for="password" class="col-md-4 control-label">Password</label>
                             <div class="col-md-6">
-                                <input id="password" type="password" class="form-control border-input" name="password" required>
+                                <input oninvalid="this.setCustomValidity('Lütfen işaretli yerleri doldurunuz')" id="password" type="password" class="form-control border-input" name="password" required>
                                 @if ($errors->has('password'))
                                     <span class="help-block">
                                         <strong>{{ $errors->first('password') }}</strong>
